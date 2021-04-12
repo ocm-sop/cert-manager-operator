@@ -1,0 +1,27 @@
+global:
+  leaderElection:
+    namespace: cert-manager
+  logLevel: 6
+
+installCRDs: true
+
+# extraArgs:
+# - --enable-certificate-owner-ref=true
+
+clusterResourceNamespace: cert-manager
+
+podDnsPolicy: "None"
+podDnsConfig:
+  nameservers:
+    - "1.1.1.1"
+    - "8.8.8.8"
+
+# webhook:
+#   deploymentAnnoations:
+#     service.beta.openshift.io/serving-cert-secret-name: cert-manager-webhook-ca
+
+#   mutatingWebhookConfigurationAnnotations:
+#     service.beta.openshift.io/serving-cert-secret-name: cert-manager-webhook-ca
+
+#   validatingWebhookConfigurationAnnotations:
+#     service.beta.openshift.io/serving-cert-secret-name: cert-manager-webhook-ca
