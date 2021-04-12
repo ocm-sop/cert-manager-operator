@@ -1,15 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-commonLabels:
-    cicd.red-chesterfield.com/name: cert-manager
-    cicd.red-chesterfield.com/component: cert-manager-operator
-    cicd.red-chesterfield.com/layer: network
-
-commonAnnotations:
-    cicd.red-chesterfield.com/managed-by: gitops
-    cicd.red-chesterfield.com/scm-url: git@github.com:ocm-sop/cert-manager-operator.git
-
 namespace: "cert-manager"
 
 generatorOptions:
