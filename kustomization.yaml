@@ -4,6 +4,9 @@ kind: Component
 generatorOptions:
   disableNameSuffixHash: true
 
+# generators:
+#   - cert-manager-chart.yaml
+
 helmChartInflationGenerator:
 - chartName: cert-manager
   chartRepoUrl: https://charts.jetstack.io

@@ -5,8 +5,8 @@ global:
 
 installCRDs: true
 
-# extraArgs:
-# - --enable-certificate-owner-ref=true
+extraArgs:
+- --enable-certificate-owner-ref=true
 
 clusterResourceNamespace: cert-manager
 
